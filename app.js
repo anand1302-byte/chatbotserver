@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json());
 app.use(bodyParser.json());
-app.use(cors({ origin: ["http://192.168.174.246:3000", "http://localhost:3000", "http://localhost:8080", "http://192.168.174.246:8080" ,"*"]}));
+app.use(cors({ origin: ["http://192.168.174.246:3000", "http://localhost:3000", "http://localhost:8080", "http://192.168.174.246:8080", "https://chatbotclient.vercel.app/" ,"*"]}));
 
 const API_KEY = process.env.GEMINI_API_KEY;
 
